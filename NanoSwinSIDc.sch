@@ -389,7 +389,7 @@ U 1 1 5AC94271
 P 4450 2900
 F 0 "X1" H 4650 2750 50  0000 L CNN
 F 1 "32Mhz" H 4600 2650 50  0000 L CNN
-F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO53-4pin_5.0x3.2mm" H 5150 2550 50  0001 C CNN
+F 2 "Oscillators:Oscillator_SMD_EuroQuartz_XO53-4pin_5.0x3.2mm_HandSoldering" H 5150 2550 50  0001 C CNN
 F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO53.pdf" H 4350 2900 50  0001 C CNN
 	1    4450 2900
 	-1   0    0    1   
