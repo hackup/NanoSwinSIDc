@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Nano SwinSID c"
-Date "2018-04-06"
-Rev "1"
+Date "2018-04-13"
+Rev "2"
 Comp "hackup.net"
 Comment1 ""
 Comment2 ""
@@ -149,55 +149,36 @@ F 3 "" H 7200 2500 50  0001 C CNN
 	1    7200 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06 J1
-U 1 1 5AC8968B
-P 2100 6200
-F 0 "J1" H 2180 6192 50  0000 L CNN
-F 1 "JTAG" H 2180 6101 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch1.27mm" H 2100 6200 50  0001 C CNN
-F 3 "~" H 2100 6200 50  0001 C CNN
-	1    2100 6200
-	1    0    0    -1  
-$EndComp
-Text GLabel 1900 6000 0    50   Input ~ 0
+Text GLabel 1650 6000 0    50   Input ~ 0
 MISO
-Text GLabel 1900 6200 0    50   Output ~ 0
+Text GLabel 1650 6100 0    50   Output ~ 0
 SCK
-Text GLabel 1900 6300 0    50   Output ~ 0
+Text GLabel 2150 6100 2    50   Output ~ 0
 MOSI
-Text GLabel 1900 6400 0    50   Output ~ 0
+Text GLabel 1650 6200 0    50   Output ~ 0
 RESET
 $Comp
 L power:GND #PWR0106
 U 1 1 5AC90C4D
-P 1850 6550
-F 0 "#PWR0106" H 1850 6300 50  0001 C CNN
-F 1 "GND" H 1855 6377 50  0000 C CNN
-F 2 "" H 1850 6550 50  0001 C CNN
-F 3 "" H 1850 6550 50  0001 C CNN
-	1    1850 6550
+P 2200 6250
+F 0 "#PWR0106" H 2200 6000 50  0001 C CNN
+F 1 "GND" H 2205 6077 50  0000 C CNN
+F 2 "" H 2200 6250 50  0001 C CNN
+F 3 "" H 2200 6250 50  0001 C CNN
+	1    2200 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0107
 U 1 1 5AC90C7E
-P 1550 5900
-F 0 "#PWR0107" H 1550 5750 50  0001 C CNN
-F 1 "VCC" H 1567 6073 50  0000 C CNN
-F 2 "" H 1550 5900 50  0001 C CNN
-F 3 "" H 1550 5900 50  0001 C CNN
-	1    1550 5900
+P 2200 5950
+F 0 "#PWR0107" H 2200 5800 50  0001 C CNN
+F 1 "VCC" H 2217 6123 50  0000 C CNN
+F 2 "" H 2200 5950 50  0001 C CNN
+F 3 "" H 2200 5950 50  0001 C CNN
+	1    2200 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 5900 1550 6100
-Wire Wire Line
-	1550 6100 1900 6100
-Wire Wire Line
-	1900 6500 1850 6500
-Wire Wire Line
-	1850 6500 1850 6550
 Text GLabel 3800 3400 2    39   Input ~ 0
 RESET
 Text GLabel 4100 2400 2    39   Input ~ 0
@@ -255,7 +236,7 @@ U 1 1 5AC91F15
 P 4200 1950
 F 0 "JP1" H 4200 2214 50  0000 C CNN
 F 1 "6581SEL" H 4200 2123 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 4200 1950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 4200 1950 50  0001 C CNN
 F 3 "" H 4200 1950 50  0001 C CNN
 	1    4200 1950
 	1    0    0    -1  
@@ -378,7 +359,7 @@ U 1 1 5AC93A20
 P 7750 2600
 F 0 "JP2" V 7704 2727 50  0000 L CNN
 F 1 "Jumper" V 7795 2727 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 7750 2600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 7750 2600 50  0001 C CNN
 F 3 "" H 7750 2600 50  0001 C CNN
 	1    7750 2600
 	0    1    1    0   
@@ -497,4 +478,23 @@ Wire Wire Line
 Connection ~ 1850 1950
 Wire Wire Line
 	1850 1950 1850 1850
+$Comp
+L Connector:Conn_02x03_Odd_Even J1
+U 1 1 5AD0F4E2
+P 1850 6100
+F 0 "J1" H 1900 6417 50  0000 C CNN
+F 1 "JTAG" H 1900 6326 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1850 6100 50  0001 C CNN
+F 3 "~" H 1850 6100 50  0001 C CNN
+	1    1850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6000 2200 6000
+Wire Wire Line
+	2200 6000 2200 5950
+Wire Wire Line
+	2150 6200 2200 6200
+Wire Wire Line
+	2200 6200 2200 6250
 $EndSCHEMATC
