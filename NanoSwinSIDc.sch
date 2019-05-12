@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:NanoSwinSIDc-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -479,7 +479,7 @@ Connection ~ 1850 1950
 Wire Wire Line
 	1850 1950 1850 1850
 $Comp
-L Connector:Conn_02x03_Odd_Even J1
+L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 5AD0F4E2
 P 1850 6100
 F 0 "J1" H 1900 6417 50  0000 C CNN

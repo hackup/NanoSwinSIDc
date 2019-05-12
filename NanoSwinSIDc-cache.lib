@@ -1,20 +1,15 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_02x03_Odd_Even
+# Connector_Generic_Conn_02x03_Odd_Even
 #
-DEF Connector_Conn_02x03_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x03_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Conn_02x03_Odd_Even" 50 -200 50 H V C CNN
+F1 "Connector_Generic_Conn_02x03_Odd_Even" 50 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*2x??x*mm*
- Connector*:*2x???Pitch*
- Pin_Header_Straight_2X*
- Pin_Header_Angled_2X*
- Socket_Strip_Straight_2X*
- Socket_Strip_Angled_2X*
+ Connector*:*_2x??_*
 $ENDFPLIST
 DRAW
 S -50 -95 0 -105 1 1 6 N
@@ -126,6 +121,9 @@ F0 "JP" 0 150 50 H V C CNN
 F1 "device_Jumper" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*
+$ENDFPLIST
 DRAW
 A 0 -26 125 1426 373 0 1 0 N -98 50 99 50
 C -100 0 35 0 1 0 N
@@ -137,13 +135,15 @@ ENDDEF
 #
 # device_LED
 #
-DEF device_LED D 0 40 Y N 1 F N
+DEF device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  LED*
+ LED_SMD:*
+ LED_THT:*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 -50 -50 50 N
@@ -164,7 +164,6 @@ F1 "device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
  R_*
 $ENDFPLIST
 DRAW
