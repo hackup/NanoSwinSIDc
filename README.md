@@ -11,7 +11,7 @@ The NanoSwinSIDc board layout was created using KiCAD and it is heavily based on
 
 ![NanoSinSIDc Rev.1](media/nano-swinsid-c-rev1.JPG)
 
-Revision 1 has been tested and can be confirmed working.
+Revision 1 has been tested and can be confirmed working. Caveat: The Board/Filter labels for JP1/JP2 have accidentally been swapped!
 
 
 ![NanoSinSIDc Rev.2](media/nano-swinsid-c-rev2.JPG)
